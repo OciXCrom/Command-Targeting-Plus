@@ -45,7 +45,7 @@ ReadFile()
 			
 			switch(szData[0])
 			{
-				case EOS, ';', '/': continue
+				case EOS, '#', ';': continue
 				default:
 				{
 					parse(szData, szCommand, charsmax(szCommand), szArg, charsmax(szArg))
